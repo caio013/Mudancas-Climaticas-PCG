@@ -8,45 +8,143 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav>
-        <a href="https://www.unisantos.br/" target="_blank"
+        <a class="Logo" href="https://www.unisantos.br/" target="_blank"
           ><img src="images/Logo Unisantos.png" alt="Logo Unisantos"
         /></a>
-        <ul>
-          <li><a href="#graficos">Gráficos</a></li>
-          <li><a href="#resultados">Resultados Encontrados</a></li>
-          <li><a href="#referencias">Referências</a></li>
-        </ul>
+        <div class="menu">
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#searches">Pesquisas</a></li>
+            <li><a href="#grafics">Gráficos</a></li>
+            <li><a href="#results">Resultados</a></li>
+            <li><a href="#actions">Ações e Soluções</a></li>
+            <li><a href="#references">Referências</a></li>
+          </ul>
+        </div>
+        <!--MENU-->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
+
     <main>
-      <section class="introducao">
-        <div class="principal">
-          <h1>
-            Mudanças Climáticas <br />
-            e Seus Impactos nos <br />
-            Ecossistemas
-          </h1>
-          <p>
-            Este estudo examina como as variações climáticas e de biodiversidade
-            se relacionam, com base em dados de temperatura, precipitação e
-            diversidade de espécies vegetais em diferentes regiões
-          </p>
+      <!-- HOME -->
+      <section class="section" id="home">
+        <div class="container flex">
+          <div class="text">
+            <h1 class="title-main">
+              Mudanças Climáticas <br />
+              e Seus Impactos nos <br />
+              Ecossistemas
+            </h1>
+            <p>
+              Este estudo examina como as variações climáticas e de
+              biodiversidade se relacionam, com base em dados de temperatura,
+              precipitação e diversidade de espécies vegetais em diferentes
+              regiões
+            </p>
+          </div>
+          <div class="image">
+            <img src="images/Mudanças Climáticas - Main.jpg" alt="" />
+          </div>
         </div>
-        <img src="images/Mudanças Climáticas - Main.jpg" alt="" />
       </section>
 
-      <section id="graficos">
-        <div class="container">
-          <h2>Gráficos</h2>
-          <p>
-            Gráficos para analise de métricas retiradas de bancos de dados
-            governamentais, tornando sua pesquisa mais intuitiva e prática.
-          </p>
+      <div class="divider-1"></div>
+
+      <!-- ABOUT -->
+
+      <section class="section" id="about">
+        <div class="container flex">
+          <div class="text">
+            <h2 class="title">Sobre</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              nesciunt praesentium voluptas. Ab ullam, incidunt fugiat nobis
+              quae minus quidem repellendus delectus? Rem accusamus aperiam
+              autem maxime praesentium eveniet magni.
+            </p>
+            <br />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+              libero eum cum reprehenderit quisquam tenetur adipisci.
+              Reprehenderit architecto fuga, labore quam debitis necessitatibus
+              porro repudiandae voluptatum quos iusto deserunt aliquid.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+              repellendus, consequuntur dignissimos vel inventore quod minima
+              fuga iste ducimus facere labore? Possimus eos, maiores qui
+              pariatur recusandae reiciendis iste placeat.
+            </p>
+          </div>
+          <div class="video">
+            <iframe
+              width="100%"
+              height="500"
+              src="https://www.youtube.com/embed/o7TQx2R24lI?si=FblbOdvKf_PBQhqV"
+              title="YouTube video player"
+              frameborder="5"
+              allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; modestbranding=1; showinfo=0; controls=0"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!-- PESQUISAS -->
+
+      <section class="section" id="searches">
+        <div class="container flex">
+          <div class="text">
+            <h2 class="title">Pesquisas</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              nesciunt praesentium voluptas. Ab ullam, incidunt fugiat nobis
+              quae minus quidem repellendus delectus? Rem accusamus aperiam
+              autem maxime praesentium eveniet magni.
+            </p>
+            <br />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+              libero eum cum reprehenderit quisquam tenetur adipisci.
+              Reprehenderit architecto fuga, labore quam debitis necessitatibus
+              porro repudiandae voluptatum quos iusto deserunt aliquid.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+              repellendus, consequuntur dignissimos vel inventore quod minima
+              fuga iste ducimus facere labore? Possimus eos, maiores qui
+              pariatur recusandae reiciendis iste placeat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <!-- GRAFICOS -->
+
+      <section class="section" id="grafics">
+        <div class="container flex">
+          <div class="text">
+            <h2 class="title">Gráficos</h2>
+            <p>
+              Gráficos para analise de métricas retiradas de bancos de dados
+              governamentais, tornando sua pesquisa mais intuitiva e prática.
+            </p>
+          </div>
           <div class="box">
-            <div class="grafico">Gráfico 1</div>
-            <div class="grafic_information">
+            <div class="grafic">Gráfico 1</div>
+            <div class="text">
               <h3>VARIAÇÃO DA TEMPERATURA MÉDIA ANUAL</h3>
               <p>
                 Um grafico de linhas mostrando a temperatura média anual em uma
@@ -55,8 +153,8 @@
                 aquecimento ou restriamento no periodo.
               </p>
             </div>
-            <div class="grafico">Gráfico 2</div>
-            <div class="grafic_information">
+            <div class="grafic">Gráfico 2</div>
+            <div class="text">
               <h3>
                 PRECIPITAÇÃO ANUAL E NÚMERO DE ESPÉCIES DE PLANTAS OBSERVADAS
               </h3>
@@ -68,8 +166,8 @@
                 água disponível e diversidade de espècies.
               </p>
             </div>
-            <div class="grafico">Gráfico 3</div>
-            <div class="grafic_information">
+            <div class="grafic">Gráfico 3</div>
+            <div class="text">
               <h3>MAPA DE DISTRIBUIÇÃO DE ESPÉCIES POR REGIÃO</h3>
               <p>
                 Um mapa que mostra a quantidade de espécies encontradas em
@@ -82,10 +180,14 @@
           </div>
         </div>
       </section>
-      <section class="resultados">
-        <div class="container">
-          <h2>Resultados Encontrados</h2>
-          <div class="box_results">
+
+      <div class="divider-2"></div>
+
+      <section class="section" id="results">
+        <div class="container flex">
+          <div class="text"></div>
+            <h2 class="title">Resultados Encontrados</h2>
+          
             <p>
               um gráfico de barras comparando a precipitação anual com o número
               de espécies de plantas Identificados no mesmo ano. Este gráfico
@@ -98,9 +200,6 @@
               biodiversidade vegetal, mostrando a relação entre água disponível
               e diversidade de espècies.
             </p>
-          </div>
-
-          <div class="box_results">
             <p>
               um gráfico de barras comparando a precipitação anual com o número
               de espécies de plantas Identificados no mesmo ano. Este gráfico
@@ -117,32 +216,74 @@
         </div>
       </section>
 
-      <section class="referencias">
-        <div class="container">
-          <h2>Referências</h2>
-          <a href="#"
-            ><img src="images/Mudanças Climaticas - Nasa.png" alt="Logo Nasa"
-          /></a>
-          <a href="#"
-            ><img src="images/Mudanças Climáticas - IPCC.jpg" alt="Logo IPCC"
-          /></a>
-          <p>
-            Para elaboração deste estudo, tivemos como referência fontes
-            governamentais confiáveis, onde pudemos analisar as informações
-            fornecidas à fim de trazer clareza e conhecimento sobre o tema
-            abordado.
-          </p>
+      <div class="divider-2"></div>
+
+      <!-- AÇÕES E SOLUÇÕES -->
+
+      <section class="section" id="actions">
+        <div class="container flex">
+          <div class="text">
+            <h3 class="title">Ações e Soluções</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, nam nobis earum facere ducimus similique tempora
+              ipsum cum voluptates magni neque minima rem expedita harum maiores
+              numquam exercitationem. Numquam, tempora?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+              voluptatibus officiis saepe, numquam, nesciunt aut laborum eos
+              reiciendis dolores quo architecto a. Praesentium asperiores alias
+              atque quaerat, cupiditate accusantium eligendi.
+            </p>
+            <div class="image">
+              <img src="images/Mudanças Climáticas - Main.jpg" alt="" />
+            </div>
+          </div>
         </div>
       </section>
 
-      <footer>
-        <div class="container">
+      <div class="divider-1"></div>
+
+      <!-- REFERÊNCIAS -->
+
+      <section class="section" id="references">
+        <div class="container flex">
+          <div class="text">
+            <h2 class="title">Referências</h2>
+            <p>
+              Para elaboração deste estudo, tivemos como referência fontes
+              governamentais confiáveis, onde pudemos analisar as informações
+              fornecidas à fim de trazer clareza e conhecimento sobre o tema
+              abordado.
+            </p>
+          </div>
+          <div class="image">
+            <a href="#"
+              ><img src="images/Mudanças Climaticas - Nasa.png" alt="Logo Nasa"
+            /></a>
+            <a href="#"
+              ><img src="images/Mudanças Climáticas - IPCC.jpg" alt="Logo IPCC"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="section">
+      <div class="container flex">
+        <div class="brand">
           <a href="https://www.unisantos.br/" target="_blank"
             ><img src="images/Logo Unisantos.png" alt="Logo Unisantos"
           /></a>
-          <h4>Copyright © 2024 - All Rights Reserved</h4>
+          <p>Copyright © 2024 - All Rights Reserved</p>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
   </body>
 </html>
