@@ -143,7 +143,9 @@
             </p>
           </div>
           <div class="box">
-            <div class="grafic">Gráfico 1</div>
+            <div class="grafic">
+              <canvas id="myChart"></canvas>
+            </div>
             <div class="text">
               <h3>VARIAÇÃO DA TEMPERATURA MÉDIA ANUAL</h3>
               <p>
@@ -153,7 +155,9 @@
                 aquecimento ou restriamento no periodo.
               </p>
             </div>
-            <div class="grafic">Gráfico 2</div>
+            <div class="grafic">
+              <canvas id="myChart"></canvas>
+            </div>
             <div class="text">
               <h3>
                 PRECIPITAÇÃO ANUAL E NÚMERO DE ESPÉCIES DE PLANTAS OBSERVADAS
@@ -166,7 +170,9 @@
                 água disponível e diversidade de espècies.
               </p>
             </div>
-            <div class="grafic">Gráfico 3</div>
+            <div class="grafic">
+              <canvas id="myChart"></canvas>
+            </div>
             <div class="text">
               <h3>MAPA DE DISTRIBUIÇÃO DE ESPÉCIES POR REGIÃO</h3>
               <p>
@@ -182,6 +188,8 @@
       </section>
 
       <div class="divider-2"></div>
+
+<!-- RESULTADOS -->
 
       <section class="section" id="results">
         <div class="container flex">
@@ -237,9 +245,8 @@
               reiciendis dolores quo architecto a. Praesentium asperiores alias
               atque quaerat, cupiditate accusantium eligendi.
             </p>
-            <div class="image">
-              <img src="images/Mudanças Climáticas - Main.jpg" alt="" />
-            </div>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nobis cumque voluptatum corrupti error, assumenda totam odit! Cupiditate harum dicta consectetur quibusdam, alias minus reiciendis eum! Sapiente praesentium impedit velit!</p>
           </div>
         </div>
       </section>
@@ -270,20 +277,41 @@
         </div>
       </section>
 
-      <div class="divider-1"></div>
     </main>
 
     <!-- FOOTER -->
 
-    <footer class="section">
+    <footer class="section"  id="footer">
       <div class="container flex">
-        <div class="brand">
-          <a href="https://www.unisantos.br/" target="_blank"
-            ><img src="images/Logo Unisantos.png" alt="Logo Unisantos"
-          /></a>
-          <p>Copyright © 2024 - All Rights Reserved</p>
-        </div>
+        <p>Copyright © 2024 - All Rights Reserved</p>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      const ctx = document.getElementById('myChart');
+    
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+
   </body>
 </html>

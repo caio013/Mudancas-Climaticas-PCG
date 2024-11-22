@@ -147,3 +147,39 @@ p{
 #results p{
     margin-top: 0.1rem;
 }
+
+/* REFERENCIAS */
+
+#references .flex{
+    flex-direction: column;
+
+}
+
+#references img{
+    width: 15rem;
+    height: 15rem;
+    margin: 0 9.4rem;
+    object-fit: contain;
+}
+
+/* FOOTER */
+
+footer{
+    height: 2.5rem;
+}
+
+#footer .flex{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer img{
+    height: 3.5rem;
+    width: 13rem;
+}
+
+#footer p{
+    font-size: 1.2rem;
+    
+}
