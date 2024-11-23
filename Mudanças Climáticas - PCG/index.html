@@ -6,27 +6,30 @@
     <title>Mudanças Climáticas e Seus Impactos nos Ecossistemas</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js">
   </head>
   <body>
     <header id="header">
-      <nav>
-        <a class="Logo" href="https://www.unisantos.br/" target="_blank"
-          ><img src="images/Logo Unisantos.png" alt="Logo Unisantos"
+      <nav class="nav-bar">
+        <a href="https://www.unisantos.br/" target="_blank"
+          ><img class="Logo" src="images/Logo Unisantos.png" alt="Logo Unisantos"
         /></a>
-        <div class="menu">
-          <ul>
+
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="nav-list">
             <li><a href="#home">Início</a></li>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#searches">Pesquisas</a></li>
             <li><a href="#grafics">Gráficos</a></li>
             <li><a href="#results">Resultados</a></li>
-            <li><a href="#actions">Ações e Soluções</a></li>
+            <li><a href="#actions">Ações</a></li>
             <li><a href="#references">Referências</a></li>
           </ul>
-        </div>
-        <!--MENU-->
-        <div class="toggle icon-menu"></div>
-        <div class="toggle icon-close"></div>
       </nav>
     </header>
 
@@ -268,7 +271,7 @@
           </div>
           <div class="image">
             <a href="#"
-              ><img src="images/Mudanças Climaticas - Nasa.png" alt="Logo Nasa"
+              ><img src="images/Mudanças Climáticas - nasa.jpg" alt="Logo Nasa"
             /></a>
             <a href="#"
               ><img src="images/Mudanças Climáticas - IPCC.jpg" alt="Logo IPCC"
@@ -287,31 +290,7 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
-
-    <script>
-      const ctx = document.getElementById('myChart');
-    
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-          datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1
-          }]
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true
-            }
-          }
-        }
-      });
-    </script>
 
   </body>
 </html>
