@@ -27,7 +27,6 @@ body{
 
 .container{
     margin: 9rem 8rem 0;
-    background-color: aqua;
     display: flex;
     flex-wrap: wrap;
 }
@@ -63,14 +62,14 @@ body{
     gap: 2.5rem;
   }
   
-  li a{
+  .nav-item a{
     text-decoration: none;
     color: #fff;
     font-size: 15px;
     transition: 0.5s;
 }
 
-li a:hover{
+  .nav-item a:hover{
     color: #ddd;
     transition: 0.5s;
 }
@@ -106,7 +105,7 @@ li a:hover{
       padding: 10px;
     }
   
-    .nav-list li {
+    .nav-item {
       margin: 10px 0;
       text-align: center;
     }
@@ -121,7 +120,7 @@ li a:hover{
 .flex{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 3rem;
 }
 
@@ -135,6 +134,15 @@ li a:hover{
     margin-bottom: 3rem;
     font-size: 3rem;
     font-weight: 500 ;
+}
+.sub-title{
+  font-size: 1.7rem;
+}
+span{
+  font-weight:bolder;
+}
+.span-title{
+  font-size: 1.5rem;
 }
 
 .image img{
